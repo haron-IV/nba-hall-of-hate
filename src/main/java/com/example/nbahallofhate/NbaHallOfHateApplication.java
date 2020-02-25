@@ -16,8 +16,6 @@ public class NbaHallOfHateApplication {
         ApiNbaHelper apiNbaHelper = new ApiNbaHelper();
 
         apiNbaHelper.getSeasons();
-
-
     }
 
 

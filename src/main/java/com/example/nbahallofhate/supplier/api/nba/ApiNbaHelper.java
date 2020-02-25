@@ -72,25 +72,12 @@ public class ApiNbaHelper {
     public ApiNbaSeasonsResponseDto getSeasons() throws IOException {
         ApiNbaHelper apiNbaHelper = new ApiNbaHelper();
 
-//        HttpUrl.Builder urlBuilder = new HttpUrl.Builder()
-//                .scheme("https")
-//                .addPathSegment("seasons/")
-//                .host(apiHost);
-
-
         Request request = new Request.Builder()
                 .url("https://api-nba-v1.p.rapidapi.com/seasons/")
                 .get()
                 .addHeader("x-rapidapi-host", "api-nba-v1.p.rapidapi.com")
                 .addHeader("x-rapidapi-key", "4137e79b32msh43112b0a5a690e6p170fe7jsnab0eef0292ea")
                 .build();
-
-//        Request request = new Request.Builder()
-//                .addHeader("x-rapidapi-host", "api-nba-v1.p.rapidapi.com")
-//                .addHeader("x-rapidapi-key", "4137e79b32msh43112b0a5a690e6p170fe7jsnab0eef0292ea")
-//                .url(urlBuilder.build())
-//                .get()
-//                .build();
 
         String responseString = client.newCall(request)
                 .execute()
