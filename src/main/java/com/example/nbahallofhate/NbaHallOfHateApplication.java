@@ -22,7 +22,7 @@ public class NbaHallOfHateApplication {
 
         apiNbaHelper.getSeasons();
 
-        player.getPlayer();
+//        player.getPlayer();
     }
 
 
