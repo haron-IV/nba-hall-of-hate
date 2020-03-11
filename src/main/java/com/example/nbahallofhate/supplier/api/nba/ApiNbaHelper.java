@@ -20,6 +20,7 @@ import java.util.Base64;
 
 @Service
 public class ApiNbaHelper {
+    //helper for external api
     public final OkHttpClient client;
 
     public ApiNbaHelper() {
