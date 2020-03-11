@@ -1,5 +1,8 @@
-#NAB HALL OF HATE
-java 1.8, springboot, laravel
+# NBA HALL OF HATE
+	java 1.8, springbot
 
-Run:
+## Run:
 maven -> site:run
+
+### other:
+Supplier.api.nba -> api for getting info about players.
