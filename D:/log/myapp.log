@@ -467,3 +467,242 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2020-03-12 14:37:37.470 DEBUG 49846 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2020-03-12 14:37:37.470 DEBUG 49846 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.dto.PlayerDto@551fd7a9, com.nbaHallOfHate.dto.PlayerDto@5bd8337a, com.nbaHallOfHa (truncated)...]
 2020-03-12 14:37:37.472 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 14:59:47.335  WARN 49846 --- [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=1m2s612ms).
+2020-03-12 15:14:09.310 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-03-12 15:14:09.315 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2020-03-12 15:14:09.316 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2020-03-12 15:14:09.321 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/browser/index.html", parameters={}
+2020-03-12 15:14:09.322 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.327 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.368 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/css/bootstrap.css", parameters={}
+2020-03-12 15:14:09.370 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.372 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.382 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/css/bootstrap-responsive.css", parameters={}
+2020-03-12 15:14:09.383 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.385 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.386 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/browser/styles.css", parameters={}
+2020-03-12 15:14:09.387 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.388 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.391 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/jquery-1.10.2.min.js", parameters={}
+2020-03-12 15:14:09.392 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/underscore.js", parameters={}
+2020-03-12 15:14:09.393 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.393 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.395 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.395 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.398 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/uritemplates.js", parameters={}
+2020-03-12 15:14:09.400 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.401 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/backbone.js", parameters={}
+2020-03-12 15:14:09.401 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/URI.min.js", parameters={}
+2020-03-12 15:14:09.402 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.402 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.402 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.402 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.403 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.404 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/bootstrap.js", parameters={}
+2020-03-12 15:14:09.404 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal.js", parameters={}
+2020-03-12 15:14:09.405 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/browser.js", parameters={}
+2020-03-12 15:14:09.406 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.405 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.406 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.407 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.407 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.407 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.410 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/http/client.js", parameters={}
+2020-03-12 15:14:09.410 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/resource.js", parameters={}
+2020-03-12 15:14:09.411 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/browser.js", parameters={}
+2020-03-12 15:14:09.411 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.412 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.412 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.414 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/explorer.js", parameters={}
+2020-03-12 15:14:09.415 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/navigation.js", parameters={}
+2020-03-12 15:14:09.415 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.415 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/inspector.js", parameters={}
+2020-03-12 15:14:09.415 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.416 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.416 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.416 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.417 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.415 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.418 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.419 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.420 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/location_bar.js", parameters={}
+2020-03-12 15:14:09.420 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/request_headers.js", parameters={}
+2020-03-12 15:14:09.421 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/resource.js", parameters={}
+2020-03-12 15:14:09.421 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.421 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.421 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.422 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.422 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.425 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/links.js", parameters={}
+2020-03-12 15:14:09.425 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/properties.js", parameters={}
+2020-03-12 15:14:09.425 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/embedded_resources.js", parameters={}
+2020-03-12 15:14:09.426 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.426 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.426 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.426 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.427 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.428 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/non_safe_request_dialog.js", parameters={}
+2020-03-12 15:14:09.428 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.430 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.430 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/embedded_resource.js", parameters={}
+2020-03-12 15:14:09.430 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.431 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.431 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.432 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.432 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/response.js", parameters={}
+2020-03-12 15:14:09.433 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/query_uri_dialog.js", parameters={}
+2020-03-12 15:14:09.433 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/response_body.js", parameters={}
+2020-03-12 15:14:09.433 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/response_headers.js", parameters={}
+2020-03-12 15:14:09.434 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.434 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.435 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.434 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.436 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/hal/views/documentation.js", parameters={}
+2020-03-12 15:14:09.436 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.436 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.436 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.436 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/js/jsoneditor.js", parameters={}
+2020-03-12 15:14:09.437 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.436 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.437 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.438 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.439 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/browser/js/CustomPostForm.js", parameters={}
+2020-03-12 15:14:09.439 DEBUG 49846 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.440 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.442 DEBUG 49846 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.520 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-03-12 15:14:09.523 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/hal+json', given [application/hal+json, application/json, */*;q=0.01] and supported [application/hal+json, application/json]
+2020-03-12 15:14:09.524 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [links: [<http://localhost:8080/profile>;rel="profile"]]
+2020-03-12 15:14:09.528 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/img/ajax-loader.gif", parameters={}
+2020-03-12 15:14:09.529 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.530 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:09.531 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 15:14:09.558 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/browser/vendor/img/glyphicons-halflings.png", parameters={}
+2020-03-12 15:14:09.560 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:META-INF/spring-data-rest/hal-browser/"]
+2020-03-12 15:14:09.562 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2020-03-12 15:14:23.837 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/players", parameters={}
+2020-03-12 15:14:23.837 DEBUG 49846 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(int)
+2020-03-12 15:14:23.838 DEBUG 49846 --- [http-nio-8080-exec-5] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.nbaHallOfHate.dto.PlayerDto com.nbaHallOfHate.controller.player.PlayerController.getPlayerById(int): Required int parameter 'id' is not present
+2020-03-12 15:14:23.838  WARN 49846 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
+2020-03-12 15:14:23.838 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-03-12 15:14:23.839 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-03-12 15:14:23.839 DEBUG 49846 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-12 15:14:23.840 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/hal+json', given [application/hal+json, application/json, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 15:14:23.841 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Mar 12 15:14:23 CET 2020, status=400, error=Bad Request, message=Required int paramet (truncated)...]
+2020-03-12 15:14:23.843 DEBUG 49846 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-03-12 15:14:28.682 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/players/all", parameters={}
+2020-03-12 15:14:28.682 DEBUG 49846 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getAllPlayers()
+2020-03-12 15:14:28.682 DEBUG 49846 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/hal+json', given [application/hal+json, application/json, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 15:14:28.683 DEBUG 49846 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.dto.PlayerDto@551fd7a9, com.nbaHallOfHate.dto.PlayerDto@5bd8337a, com.nbaHallOfHa (truncated)...]
+2020-03-12 15:14:28.685 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 15:14:53.976 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/players?id=1", parameters={masked}
+2020-03-12 15:14:53.976 DEBUG 49846 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(int)
+2020-03-12 15:14:53.979 DEBUG 49846 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/hal+json', given [application/hal+json, application/json, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 15:14:53.979 DEBUG 49846 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.dto.PlayerDto@5bd8337a]
+2020-03-12 15:14:53.981 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 15:15:00.861 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-03-12 15:15:00.863 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/hal+json', given [application/hal+json, application/json, */*;q=0.01] and supported [application/hal+json, application/json]
+2020-03-12 15:15:00.864 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [links: [<http://localhost:8080/profile>;rel="profile"]]
+2020-03-12 15:15:00.867 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 17:59:10.968  WARN 49846 --- [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=4m51s929ms).
+2020-03-12 19:38:31.752  INFO 49846 --- [Thread-45] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:38:31.753  INFO 49846 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 19:38:31.753  INFO 49846 --- [Thread-45] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-03-12 19:38:31.958  WARN 49846 --- [Thread-45] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Baza danych jest już zamknięta (aby zablokować samoczynne zamykanie podczas zamknięcia VM dodaj ";DB_CLOSE_ON_EXIT=FALSE" do URL bazy danych)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-03-12 19:38:31.958  INFO 49846 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2020-03-12 19:38:31.959  INFO 49846 --- [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2020-03-12 19:38:42.144  WARN 49846 --- [restartedMain] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-03-12 19:38:47.150  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 49846 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-12 19:38:47.150  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-12 19:38:47.329  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-12 19:38:47.331  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-03-12 19:38:47.456  INFO 49846 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-12 19:38:47.456  INFO 49846 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-12 19:38:47.457  INFO 49846 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-12 19:38:47.462  INFO 49846 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-12 19:38:47.462 DEBUG 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-12 19:38:47.462  INFO 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 308 ms
+2020-03-12 19:38:47.485  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2020-03-12 19:38:47.499  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2020-03-12 19:38:47.499  INFO 49846 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/console'. Database available at 'jdbc:h2:file:./nbahoh'
+2020-03-12 19:38:47.525  INFO 49846 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-12 19:38:47.528  INFO 49846 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-12 19:38:47.542  INFO 49846 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-12 19:38:47.542  INFO 49846 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 19:38:47.545  INFO 49846 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-12 19:38:47.550  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 19:38:47.551  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-12 19:38:47.551  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 19:38:47.643  WARN 49846 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-12 19:38:47.671  INFO 49846 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:38:47.677 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-12 19:38:47.687 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-12 19:38:47.704 DEBUG 49846 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-12 19:38:47.711 DEBUG 49846 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-12 19:38:47.788  INFO 49846 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-12 19:38:47.789  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 15.681 seconds (JVM running for 21053.377)
+2020-03-12 19:38:47.790  INFO 49846 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-12 19:49:22.886  INFO 49846 --- [Thread-50] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:49:22.888  INFO 49846 --- [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 19:49:22.888  INFO 49846 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2020-03-12 19:49:22.895  INFO 49846 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2020-03-12 19:49:38.147  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 49846 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-12 19:49:38.147  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-12 19:49:38.317  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-12 19:49:38.319  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-03-12 19:49:38.427  INFO 49846 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-12 19:49:38.427  INFO 49846 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-12 19:49:38.433  INFO 49846 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-12 19:49:38.433 DEBUG 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-12 19:49:38.433  INFO 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 283 ms
+2020-03-12 19:49:38.449  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2020-03-12 19:49:38.451  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2020-03-12 19:49:38.477  INFO 49846 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-12 19:49:38.480  INFO 49846 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-12 19:49:38.490  INFO 49846 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-12 19:49:38.491  INFO 49846 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 19:49:38.499  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 19:49:38.499  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-12 19:49:38.499  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 19:49:38.602  INFO 49846 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:49:38.607 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-12 19:49:38.616 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-12 19:49:38.630 DEBUG 49846 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-12 19:49:38.636 DEBUG 49846 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-12 19:49:38.701  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 15.591 seconds (JVM running for 21704.311)
+2020-03-12 19:50:39.561  INFO 49846 --- [Thread-55] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:50:39.561  INFO 49846 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 19:50:39.562  INFO 49846 --- [Thread-55] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-03-12 19:50:39.766  WARN 49846 --- [Thread-55] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Baza danych jest już zamknięta (aby zablokować samoczynne zamykanie podczas zamknięcia VM dodaj ";DB_CLOSE_ON_EXIT=FALSE" do URL bazy danych)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-03-12 19:50:39.767  INFO 49846 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2020-03-12 19:50:39.767  INFO 49846 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2020-03-12 19:50:54.923  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 49846 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-12 19:50:54.923  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-12 19:50:55.086  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-12 19:50:55.088  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-03-12 19:50:55.190  INFO 49846 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-12 19:50:55.190  INFO 49846 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-12 19:50:55.195  INFO 49846 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-12 19:50:55.195 DEBUG 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-12 19:50:55.195  INFO 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 269 ms
+2020-03-12 19:50:55.210  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2020-03-12 19:50:55.212  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2020-03-12 19:50:55.239  INFO 49846 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-12 19:50:55.242  INFO 49846 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-12 19:50:55.251  INFO 49846 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-12 19:50:55.251  INFO 49846 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 19:50:55.259  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 19:50:55.259  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-12 19:50:55.259  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 19:50:55.353  INFO 49846 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 19:50:55.358 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-12 19:50:55.365 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-12 19:50:55.377 DEBUG 49846 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-12 19:50:55.384 DEBUG 49846 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-12 19:50:55.445  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 15.557 seconds (JVM running for 21781.057)
+2020-03-12 21:35:01.341  WARN 49846 --- [HikariPool-12 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Thread starvation or clock leap detected (housekeeper delta=54m35s864ms).
+2020-03-12 22:49:51.507  WARN 49846 --- [HikariPool-12 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Thread starvation or clock leap detected (housekeeper delta=1h14m50s166ms).
+2020-03-12 22:54:44.361  WARN 49846 --- [HikariPool-12 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Thread starvation or clock leap detected (housekeeper delta=4m22s848ms).
+2020-03-12 23:20:35.402  WARN 49846 --- [HikariPool-12 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Thread starvation or clock leap detected (housekeeper delta=15m20s941ms).

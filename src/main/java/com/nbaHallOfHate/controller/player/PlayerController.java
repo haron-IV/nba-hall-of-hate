@@ -37,6 +37,7 @@ public class PlayerController {
         return players.add(playerDto);
     }
 
+//    Only if you need to change all properties in player dto, if you want to update only one property in dto you should use PATCH method
     @PutMapping
     public boolean updatePlayer(@RequestBody PlayerDto playerDto) {
         return players.add(playerDto);
