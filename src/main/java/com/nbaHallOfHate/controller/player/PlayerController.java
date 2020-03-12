@@ -36,4 +36,14 @@ public class PlayerController {
     public boolean addPlayer(@RequestBody PlayerDto playerDto) {
         return players.add(playerDto);
     }
+
+    @PutMapping
+    public boolean updatePlayer(@RequestBody PlayerDto playerDto) {
+        return players.add(playerDto);
+    }
+
+    @DeleteMapping
+    public boolean deletePlayer(@RequestParam int id) {
+        return players.removeIf(el -> el.getId() == id);
+    }
 }

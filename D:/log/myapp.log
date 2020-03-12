@@ -368,3 +368,102 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2020-03-12 14:31:06.250 DEBUG 49846 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2020-03-12 14:31:06.251 DEBUG 49846 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.dto.PlayerDto@6ff8bf95, com.nbaHallOfHate.dto.PlayerDto@613f4c1a, com.nbaHallOfHa (truncated)...]
 2020-03-12 14:31:06.254 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 14:34:10.560 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/players", parameters={}
+2020-03-12 14:34:10.560 DEBUG 49846 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(int)
+2020-03-12 14:34:10.561 DEBUG 49846 --- [http-nio-8080-exec-9] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.nbaHallOfHate.dto.PlayerDto com.nbaHallOfHate.controller.player.PlayerController.getPlayerById(int): Required int parameter 'id' is not present
+2020-03-12 14:34:10.561  WARN 49846 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
+2020-03-12 14:34:10.561 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-03-12 14:34:10.562 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-03-12 14:34:10.562 DEBUG 49846 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-12 14:34:10.563 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:34:10.564 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Mar 12 14:34:10 CET 2020, status=400, error=Bad Request, message=Required int paramet (truncated)...]
+2020-03-12 14:34:10.566 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-03-12 14:34:28.726  INFO 49846 --- [Thread-40] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-12 14:34:28.728  INFO 49846 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 14:34:28.728  INFO 49846 --- [Thread-40] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-03-12 14:34:28.931  WARN 49846 --- [Thread-40] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Baza danych jest już zamknięta (aby zablokować samoczynne zamykanie podczas zamknięcia VM dodaj ";DB_CLOSE_ON_EXIT=FALSE" do URL bazy danych)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-03-12 14:34:28.931  INFO 49846 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2020-03-12 14:34:28.933  INFO 49846 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2020-03-12 14:34:39.140  WARN 49846 --- [restartedMain] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-03-12 14:34:44.145  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 49846 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-12 14:34:44.145  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-12 14:34:44.305  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-12 14:34:44.306  INFO 49846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-03-12 14:34:44.410  INFO 49846 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-12 14:34:44.410  INFO 49846 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-12 14:34:44.411  INFO 49846 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-12 14:34:44.415  INFO 49846 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-12 14:34:44.415 DEBUG 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-12 14:34:44.415  INFO 49846 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 267 ms
+2020-03-12 14:34:44.432  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2020-03-12 14:34:44.434  INFO 49846 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2020-03-12 14:34:44.434  INFO 49846 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-12 14:34:44.460  INFO 49846 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-12 14:34:44.463  INFO 49846 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-12 14:34:44.473  INFO 49846 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-12 14:34:44.473  INFO 49846 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-12 14:34:44.476  INFO 49846 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-12 14:34:44.482  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 14:34:44.482  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-12 14:34:44.482  WARN 49846 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-12 14:34:44.551  WARN 49846 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-12 14:34:44.573  INFO 49846 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 14:34:44.579 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-12 14:34:44.587 DEBUG 49846 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-12 14:34:44.599 DEBUG 49846 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-12 14:34:44.607 DEBUG 49846 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-12 14:34:44.669  INFO 49846 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-12 14:34:44.669  INFO 49846 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 15.558 seconds (JVM running for 3104.046)
+2020-03-12 14:34:44.671  INFO 49846 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-12 14:35:36.334  INFO 49846 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-12 14:35:36.335  INFO 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-12 14:35:36.335 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-03-12 14:35:36.338 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-03-12 14:35:36.338  INFO 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-03-12 14:35:36.338 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/players", parameters={}
+2020-03-12 14:35:36.339 DEBUG 49846 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(int)
+2020-03-12 14:35:36.344 DEBUG 49846 --- [http-nio-8080-exec-2] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.nbaHallOfHate.dto.PlayerDto com.nbaHallOfHate.controller.player.PlayerController.getPlayerById(int): Required int parameter 'id' is not present
+2020-03-12 14:35:36.344  WARN 49846 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
+2020-03-12 14:35:36.344 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-03-12 14:35:36.345 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-03-12 14:35:36.346 DEBUG 49846 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-12 14:35:36.348 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:35:36.348 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Mar 12 14:35:36 CET 2020, status=400, error=Bad Request, message=Required int paramet (truncated)...]
+2020-03-12 14:35:36.352 DEBUG 49846 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-03-12 14:36:09.880 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/players", parameters={}
+2020-03-12 14:36:09.881 DEBUG 49846 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(int)
+2020-03-12 14:36:09.881 DEBUG 49846 --- [http-nio-8080-exec-4] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.nbaHallOfHate.dto.PlayerDto com.nbaHallOfHate.controller.player.PlayerController.getPlayerById(int): Required int parameter 'id' is not present
+2020-03-12 14:36:09.881  WARN 49846 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
+2020-03-12 14:36:09.881 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-03-12 14:36:09.881 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-03-12 14:36:09.882 DEBUG 49846 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-12 14:36:09.883 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:36:09.883 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Mar 12 14:36:09 CET 2020, status=400, error=Bad Request, message=Required int paramet (truncated)...]
+2020-03-12 14:36:09.884 DEBUG 49846 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2020-03-12 14:36:23.017 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/api/players", parameters={}
+2020-03-12 14:36:23.017 DEBUG 49846 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#updatePlayer(PlayerDto)
+2020-03-12 14:36:23.019 DEBUG 49846 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.dto.PlayerDto@3419fcae]
+2020-03-12 14:36:23.020 DEBUG 49846 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:36:23.021 DEBUG 49846 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [true]
+2020-03-12 14:36:23.022 DEBUG 49846 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 14:36:27.731 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/players/all", parameters={}
+2020-03-12 14:36:27.731 DEBUG 49846 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getAllPlayers()
+2020-03-12 14:36:27.733 DEBUG 49846 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:36:27.733 DEBUG 49846 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.dto.PlayerDto@551fd7a9, com.nbaHallOfHate.dto.PlayerDto@5bd8337a, com.nbaHallOfHa (truncated)...]
+2020-03-12 14:36:27.736 DEBUG 49846 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 14:37:11.821 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : DELETE "/api/players?id=5", parameters={masked}
+2020-03-12 14:37:11.822 DEBUG 49846 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#deletePlayer(int)
+2020-03-12 14:37:11.823 DEBUG 49846 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:37:11.823 DEBUG 49846 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [false]
+2020-03-12 14:37:11.824 DEBUG 49846 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 14:37:30.700 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/api/players?id=3", parameters={masked}
+2020-03-12 14:37:30.701 DEBUG 49846 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#deletePlayer(int)
+2020-03-12 14:37:30.701 DEBUG 49846 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:37:30.702 DEBUG 49846 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [true]
+2020-03-12 14:37:30.702 DEBUG 49846 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 14:37:37.469 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/players/all", parameters={}
+2020-03-12 14:37:37.469 DEBUG 49846 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getAllPlayers()
+2020-03-12 14:37:37.470 DEBUG 49846 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-12 14:37:37.470 DEBUG 49846 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.dto.PlayerDto@551fd7a9, com.nbaHallOfHate.dto.PlayerDto@5bd8337a, com.nbaHallOfHa (truncated)...]
+2020-03-12 14:37:37.472 DEBUG 49846 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
