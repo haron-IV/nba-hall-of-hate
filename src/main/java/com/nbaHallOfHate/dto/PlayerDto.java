@@ -2,8 +2,18 @@ package com.nbaHallOfHate.dto;
 
 public class PlayerDto {
     private String status = "Active";
+    private int id;
 
-    public PlayerDto(String status) {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public PlayerDto(int id, String status) {
+        this.id = id;
         this.status = status;
     }
 

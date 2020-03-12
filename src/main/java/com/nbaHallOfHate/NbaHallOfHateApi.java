@@ -17,7 +17,7 @@ public class NbaHallOfHateApi {
         players = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
-            players.add(new PlayerDto("Active"));
+            players.add(new PlayerDto("Active", 0));
         }
     }
 
