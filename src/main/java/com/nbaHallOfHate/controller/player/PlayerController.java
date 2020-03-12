@@ -30,9 +30,8 @@ public class PlayerController {
 
     @GetMapping
     public PlayerDto getPlayerById(@RequestParam int id) {
-        Optional<PlayerDto> player = players.stream()
-                .filter( el -> el.getId() == id ).findFirst();
-//        System.out.println("ROOOROROROOROROROROSOSOOROTORORO");
+        Optional<PlayerDto> player = players.stream().filter( el -> el.getId() == id ).findFirst();
+
         return player.get();
     }
 }
