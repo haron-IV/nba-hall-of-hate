@@ -20,9 +20,9 @@ public class NbaHallOfHateApplication {
 
         ApiNbaHelper apiNbaHelper = new ApiNbaHelper();
 
-        apiNbaHelper.getSeasons();
+//        apiNbaHelper.getSeasons();
 
-//        player.getPlayer();
+        player.getPlayer();
     }
 
 
