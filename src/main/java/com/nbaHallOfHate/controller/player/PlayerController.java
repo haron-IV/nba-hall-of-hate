@@ -1,10 +1,7 @@
 package com.nbaHallOfHate.controller.player;
 
 import com.nbaHallOfHate.dto.PlayerDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,5 +30,10 @@ public class PlayerController {
         Optional<PlayerDto> player = players.stream().filter( el -> el.getId() == id ).findFirst();
 
         return player.get();
+    }
+
+    @PostMapping
+    public boolean addPlayer(@RequestBody PlayerDto playerDto) {
+        return players.add(playerDto);
     }
 }
