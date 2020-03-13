@@ -20,10 +20,6 @@ public class PlayerService {
         return playerRepository.findById(id);
     }
 
-    public Iterable<PlayerEntity> findAll() {
-        return playerRepository.findAll();
-    }
-
     public PlayerEntity save(PlayerEntity playerEntity) {
 
         return playerRepository.save(playerEntity);
