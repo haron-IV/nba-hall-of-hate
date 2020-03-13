@@ -3,8 +3,6 @@ package com.nbaHallOfHate.service.player;
 import com.nbaHallOfHate.entity.PlayerEntity;
 import com.nbaHallOfHate.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -34,12 +32,5 @@ public class PlayerService {
     public void remove(Long id) {
         playerRepository.deleteById(id);
     }
-
-//    @EventListener(ApplicationReadyEvent.class)
-//    public void fillDB() {
-//        for (int i = 0; i < 5; i++) {
-//            save(new PlayerEntity(i, "Active"));
-//        }
-//    }
 
 }

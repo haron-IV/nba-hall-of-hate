@@ -18,20 +18,11 @@ public class PlayerEntity {
         return id;
     }
 
-//    public void setId(Long id) {
-//        this.id = id;
-//    }
-
     public PlayerEntity() {}
 
     public PlayerEntity(String status) {
         this.status = status;
     }
-
-//    public PlayerEntity(Long id, String status) {
-//        this.id = id;
-//        this.status = status;
-//    }
 
     public String getStatus() {
         return status;
