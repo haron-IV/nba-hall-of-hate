@@ -23,7 +23,7 @@ public class PlayerService {
 
     public void update(Long id, PlayerEntity req) {
         Optional<PlayerEntity> playerEntity = this.find(id);
-        playerEntity.get().setStatus(req.getStatus());
+        playerEntity.get().setName(req.getName());
 
         this.save(playerEntity.get());
     }

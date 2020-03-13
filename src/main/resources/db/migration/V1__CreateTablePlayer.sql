@@ -1,8 +1,20 @@
-CREATE TABLE public.players
+--CREATE TABLE public.players
+--(
+--    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
+--    status text
+--);
+--
+--ALTER TABLE public.players
+--    OWNER to postgres;
+
+
+
+
+CREATE TABLE public.player
 (
     id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
-    status text
+    name character varying(50)
 );
 
-ALTER TABLE public.players
-    OWNER to postgres;
+ALTER TABLE public.player
+    OWNER to koder;

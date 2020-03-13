@@ -3,7 +3,7 @@ package com.nbaHallOfHate.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "players")
+@Table(name = "player")
 public class PlayerEntity {
 
     @Id
@@ -11,24 +11,24 @@ public class PlayerEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "status")
-    private String status;
+    @Column(name = "name")
+    private String name;
+
+    public PlayerEntity() {}
+
+    public PlayerEntity(String name) {
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
     }
 
-    public PlayerEntity() {}
-
-    public PlayerEntity(String status) {
-        this.status = status;
+    public String getName() {
+        return name;
     }
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
+    public void setName(String name) {
+        this.name = name;
     }
 }
