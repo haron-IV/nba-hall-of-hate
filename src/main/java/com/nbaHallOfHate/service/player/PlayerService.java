@@ -18,7 +18,7 @@ public class PlayerService {
         this.playerRepository = playerRepository;
     }
 
-    public Optional<PlayerEntity> find(Integer id) {
+    public Optional<PlayerEntity> find(Long id) {
         return playerRepository.findById(id);
     }
 
@@ -27,10 +27,11 @@ public class PlayerService {
     }
 
     public PlayerEntity save(PlayerEntity playerEntity) {
+
         return playerRepository.save(playerEntity);
     }
 
-    public void remove(Integer id) {
+    public void remove(Long id) {
         playerRepository.deleteById(id);
     }
 

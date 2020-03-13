@@ -6,29 +6,32 @@ import javax.persistence.*;
 @Table(name = "players")
 public class PlayerEntity {
 
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "status")
-    private String status = "Active";
+    private String status;
 
-
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
 
     public PlayerEntity() {}
 
-    public PlayerEntity(int id, String status) {
-        this.id = id;
+    public PlayerEntity(String status) {
         this.status = status;
     }
+
+//    public PlayerEntity(Long id, String status) {
+//        this.id = id;
+//        this.status = status;
+//    }
 
     public String getStatus() {
         return status;

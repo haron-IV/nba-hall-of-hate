@@ -25,10 +25,10 @@ public class PlayerController {
         return playerService.findAll();
     }
 
-    @GetMapping
-    public Optional<PlayerEntity> getPlayerById(@RequestParam int id) {
-        return playerService.find(id);
-    }
+//    @GetMapping
+//    public Optional<PlayerEntity> getPlayerById(@RequestParam int id) {
+//        return playerService.find(id);
+//    }
 
     @PostMapping
     public PlayerEntity addPlayer(@RequestBody PlayerEntity playerEntity) {
