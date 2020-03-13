@@ -9232,3 +9232,416 @@ java.lang.IllegalArgumentException: Can not set int field com.nbaHallOfHate.enti
 2020-03-13 19:49:16.835 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2020-03-13 20:35:13.810  WARN 7467 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m30s150ms).
 2020-03-13 20:37:55.352  WARN 7467 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m41s543ms).
+2020-03-13 21:17:11.732 DEBUG 7467 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:17:11.734 DEBUG 7467 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:17:11.739 DEBUG 7467 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:23:16.099 DEBUG 7467 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:23:16.100 DEBUG 7467 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:23:16.101 DEBUG 7467 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:23:29.370 DEBUG 7467 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:23:29.370 DEBUG 7467 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:23:29.372 DEBUG 7467 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:26:24.730  INFO 7467 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:26:24.731  INFO 7467 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:26:24.733  INFO 7467 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-03-13 21:26:24.737  INFO 7467 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-03-13 21:26:25.142  INFO 7467 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 7467 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-13 21:26:25.143  INFO 7467 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-13 21:26:25.406  INFO 7467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-13 21:26:25.413  INFO 7467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2020-03-13 21:26:25.587  INFO 7467 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-13 21:26:25.588  INFO 7467 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-13 21:26:25.588  INFO 7467 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-13 21:26:25.596  INFO 7467 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-13 21:26:25.596 DEBUG 7467 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-13 21:26:25.596  INFO 7467 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 450 ms
+2020-03-13 21:26:25.619  INFO 7467 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-03-13 21:26:25.629  INFO 7467 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-03-13 21:26:25.629  INFO 7467 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql:nbahoh'
+2020-03-13 21:26:25.660  INFO 7467 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:postgresql:nbahoh (PostgreSQL 12.2)
+2020-03-13 21:26:25.667  INFO 7467 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2020-03-13 21:26:25.670  INFO 7467 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2020-03-13 21:26:25.670  INFO 7467 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2020-03-13 21:26:25.691  INFO 7467 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-13 21:26:25.697  INFO 7467 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-03-13 21:26:25.780  INFO 7467 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-13 21:26:25.780  INFO 7467 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:26:25.845  WARN 7467 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:26:25.846  WARN 7467 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-13 21:26:25.846  WARN 7467 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:26:25.961  WARN 7467 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 21:26:26.001  INFO 7467 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:26:26.010 DEBUG 7467 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-13 21:26:26.024 DEBUG 7467 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-13 21:26:26.043 DEBUG 7467 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-13 21:26:26.052 DEBUG 7467 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-13 21:26:26.129  INFO 7467 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-13 21:26:26.143  INFO 7467 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-13 21:26:26.144  INFO 7467 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 1.194 seconds (JVM running for 5505.925)
+2020-03-13 21:26:26.146  INFO 7467 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-13 21:26:37.257  INFO 7467 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-13 21:26:37.258  INFO 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-13 21:26:37.258 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-03-13 21:26:37.265 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-03-13 21:26:37.265  INFO 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-03-13 21:26:37.265 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:26:37.266 DEBUG 7467 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:26:37.266 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:26:37.267 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:28:29.979 DEBUG 7467 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:28:29.980 DEBUG 7467 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:28:29.980 DEBUG 7467 --- [http-nio-8080-exec-3] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:28:29.981 DEBUG 7467 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:28:40.498 DEBUG 7467 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:28:40.498 DEBUG 7467 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:28:40.499 DEBUG 7467 --- [http-nio-8080-exec-4] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:28:40.499 DEBUG 7467 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:32:22.935 DEBUG 7467 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:32:22.936 DEBUG 7467 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:32:22.936 DEBUG 7467 --- [http-nio-8080-exec-6] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:32:22.937 DEBUG 7467 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:32:33.449 DEBUG 7467 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:32:33.449 DEBUG 7467 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:32:33.450 DEBUG 7467 --- [http-nio-8080-exec-7] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:32:33.451 DEBUG 7467 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:36:00.065 DEBUG 7467 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:36:00.065 DEBUG 7467 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:36:00.066 DEBUG 7467 --- [http-nio-8080-exec-9] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:36:00.067 DEBUG 7467 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:36:08.480 DEBUG 7467 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:36:08.480 DEBUG 7467 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:36:08.481 DEBUG 7467 --- [http-nio-8080-exec-10] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:36:08.482 DEBUG 7467 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:37:56.919 DEBUG 7467 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:37:56.920 DEBUG 7467 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:37:56.920 DEBUG 7467 --- [http-nio-8080-exec-2] o.s.web.cors.DefaultCorsProcessor        : Reject: 'http://localhost:8081' origin is not allowed
+2020-03-13 21:37:56.921 DEBUG 7467 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-13 21:38:30.008  INFO 7467 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:38:30.010  INFO 7467 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:38:30.011  INFO 7467 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-03-13 21:38:30.018  INFO 7467 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-03-13 21:38:30.287  INFO 7467 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 7467 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-13 21:38:30.288  INFO 7467 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-13 21:38:30.488  INFO 7467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-13 21:38:30.494  INFO 7467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 1 JPA repository interfaces.
+2020-03-13 21:38:30.634  INFO 7467 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-13 21:38:30.635  INFO 7467 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-13 21:38:30.635  INFO 7467 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-13 21:38:30.642  INFO 7467 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-13 21:38:30.642 DEBUG 7467 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-13 21:38:30.642  INFO 7467 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 351 ms
+2020-03-13 21:38:30.660  INFO 7467 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-03-13 21:38:30.667  INFO 7467 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-03-13 21:38:30.667  INFO 7467 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql:nbahoh'
+2020-03-13 21:38:30.692  INFO 7467 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:postgresql:nbahoh (PostgreSQL 12.2)
+2020-03-13 21:38:30.698  INFO 7467 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.003s)
+2020-03-13 21:38:30.700  INFO 7467 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2020-03-13 21:38:30.700  INFO 7467 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2020-03-13 21:38:30.716  INFO 7467 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-13 21:38:30.720  INFO 7467 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-03-13 21:38:30.769  INFO 7467 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-13 21:38:30.769  INFO 7467 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:38:30.820  WARN 7467 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:38:30.820  WARN 7467 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-13 21:38:30.820  WARN 7467 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:38:30.896  WARN 7467 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 21:38:30.920  INFO 7467 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:38:30.925 DEBUG 7467 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-13 21:38:30.936 DEBUG 7467 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-13 21:38:30.950 DEBUG 7467 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-13 21:38:30.957 DEBUG 7467 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-13 21:38:31.021  INFO 7467 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-13 21:38:31.037  INFO 7467 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-13 21:38:31.038  INFO 7467 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 0.775 seconds (JVM running for 6230.849)
+2020-03-13 21:38:31.040  INFO 7467 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-13 21:39:34.171  INFO 12132 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 12132 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-13 21:39:34.174  INFO 12132 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-13 21:39:34.211  INFO 12132 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-13 21:39:34.211  INFO 12132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-13 21:39:34.211  INFO 12132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-13 21:39:34.821  INFO 12132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-13 21:39:34.868  INFO 12132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-03-13 21:39:35.522  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-13 21:39:35.531  INFO 12132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-13 21:39:35.531  INFO 12132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-13 21:39:35.600  INFO 12132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-13 21:39:35.600 DEBUG 12132 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-13 21:39:35.601  INFO 12132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1390 ms
+2020-03-13 21:39:35.658  INFO 12132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-13 21:39:35.731  INFO 12132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-13 21:39:35.737  INFO 12132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql:nbahoh'
+2020-03-13 21:39:35.847  INFO 12132 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 6.0.8 by Redgate
+2020-03-13 21:39:35.858  INFO 12132 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:postgresql:nbahoh (PostgreSQL 12.2)
+2020-03-13 21:39:35.883  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2020-03-13 21:39:35.888  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2020-03-13 21:39:35.888  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2020-03-13 21:39:35.969  INFO 12132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-13 21:39:36.018  INFO 12132 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-13 21:39:36.165  INFO 12132 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-13 21:39:36.246  INFO 12132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-03-13 21:39:36.679  INFO 12132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-13 21:39:36.686  INFO 12132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:39:36.882  WARN 12132 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:39:36.882  WARN 12132 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-13 21:39:36.882  WARN 12132 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:39:37.282  WARN 12132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 21:39:37.438  INFO 12132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:39:37.463 DEBUG 12132 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-13 21:39:37.522 DEBUG 12132 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-13 21:39:37.579 DEBUG 12132 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-13 21:39:37.596 DEBUG 12132 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-13 21:39:37.898  INFO 12132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-13 21:39:37.942  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-13 21:39:37.945  INFO 12132 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 4.078 seconds (JVM running for 4.486)
+2020-03-13 21:40:02.988  INFO 12132 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-13 21:40:02.989  INFO 12132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-13 21:40:02.989 DEBUG 12132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-03-13 21:40:03.004 DEBUG 12132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-03-13 21:40:03.005  INFO 12132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-03-13 21:40:03.012 DEBUG 12132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:40:03.016 DEBUG 12132 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:40:03.026 DEBUG 12132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:40:03.035 DEBUG 12132 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:40:03.036 DEBUG 12132 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:40:03.091 DEBUG 12132 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@7b314441]
+2020-03-13 21:40:03.157 DEBUG 12132 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:40:03.157 DEBUG 12132 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@7b314441]
+2020-03-13 21:40:03.167 DEBUG 12132 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:40:37.051 DEBUG 12132 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:40:37.051 DEBUG 12132 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:40:37.052 DEBUG 12132 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:40:37.056 DEBUG 12132 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:40:37.057 DEBUG 12132 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:40:37.060 DEBUG 12132 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@94229a7]
+2020-03-13 21:40:37.065 DEBUG 12132 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:40:37.066 DEBUG 12132 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@94229a7]
+2020-03-13 21:40:37.068 DEBUG 12132 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:41:27.932  INFO 12132 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:41:27.934  INFO 12132 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:41:27.939  INFO 12132 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-13 21:41:27.943  INFO 12132 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-13 21:41:28.140  INFO 12132 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 12132 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-13 21:41:28.141  INFO 12132 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-13 21:41:28.397  INFO 12132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-13 21:41:28.403  INFO 12132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
+2020-03-13 21:41:28.557  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-13 21:41:28.558  INFO 12132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-13 21:41:28.558  INFO 12132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-13 21:41:28.564  INFO 12132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-13 21:41:28.565 DEBUG 12132 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-13 21:41:28.565  INFO 12132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 420 ms
+2020-03-13 21:41:28.590  INFO 12132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-03-13 21:41:28.601  INFO 12132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-03-13 21:41:28.601  INFO 12132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql:nbahoh'
+2020-03-13 21:41:28.628  INFO 12132 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:postgresql:nbahoh (PostgreSQL 12.2)
+2020-03-13 21:41:28.634  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.002s)
+2020-03-13 21:41:28.644  INFO 12132 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2020-03-13 21:41:28.664  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2020-03-13 21:41:28.671  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version 1 - CreateTablePlayer
+2020-03-13 21:41:28.680  INFO 12132 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public" (execution time 00:00.017s)
+2020-03-13 21:41:28.704  INFO 12132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-13 21:41:28.709  INFO 12132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-03-13 21:41:28.793  INFO 12132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-13 21:41:28.793  INFO 12132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:41:28.842  WARN 12132 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:41:28.842  WARN 12132 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-13 21:41:28.843  WARN 12132 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:41:28.950  WARN 12132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 21:41:28.959  INFO 12178 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 12178 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-13 21:41:28.962  INFO 12178 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-13 21:41:28.987  INFO 12132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:41:28.995 DEBUG 12132 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-13 21:41:29.008 DEBUG 12132 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-13 21:41:29.008  INFO 12178 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-13 21:41:29.017  INFO 12178 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-13 21:41:29.017  INFO 12178 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-13 21:41:29.028 DEBUG 12132 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-13 21:41:29.036 DEBUG 12132 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-13 21:41:29.100  INFO 12132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-13 21:41:29.115  INFO 12132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-13 21:41:29.119  INFO 12132 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 1.011 seconds (JVM running for 115.664)
+2020-03-13 21:41:29.122  INFO 12132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-13 21:41:29.692  INFO 12178 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-13 21:41:29.741  INFO 12178 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-03-13 21:41:30.373  INFO 12178 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-13 21:41:30.382  INFO 12178 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-13 21:41:30.383  INFO 12178 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-13 21:41:30.462  INFO 12178 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-13 21:41:30.462 DEBUG 12178 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-13 21:41:30.462  INFO 12178 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1445 ms
+2020-03-13 21:41:30.526  INFO 12178 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-13 21:41:30.605  INFO 12178 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-13 21:41:30.611  INFO 12178 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql:nbahoh'
+2020-03-13 21:41:30.746  INFO 12178 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 6.0.8 by Redgate
+2020-03-13 21:41:30.761  INFO 12178 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:postgresql:nbahoh (PostgreSQL 12.2)
+2020-03-13 21:41:30.790  INFO 12178 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.015s)
+2020-03-13 21:41:30.794  INFO 12178 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2020-03-13 21:41:30.795  INFO 12178 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2020-03-13 21:41:30.891  INFO 12178 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-13 21:41:30.941  INFO 12178 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-13 21:41:31.125  INFO 12178 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-13 21:41:31.201  INFO 12178 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-03-13 21:41:31.632  INFO 12178 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-13 21:41:31.640  INFO 12178 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:41:31.841  WARN 12178 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:41:31.842  WARN 12178 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-13 21:41:31.842  WARN 12178 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:41:32.228  WARN 12178 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 21:41:32.357  INFO 12178 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:41:32.379 DEBUG 12178 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-13 21:41:32.433 DEBUG 12178 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-13 21:41:32.483 DEBUG 12178 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-13 21:41:32.500 DEBUG 12178 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-13 21:41:32.753  WARN 12178 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-13 21:41:32.822  INFO 12178 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-13 21:41:32.825  WARN 12178 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-03-13 21:41:32.825  WARN 12178 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-03-13 21:41:32.829  INFO 12178 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-13 21:41:32.833 ERROR 12178 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-03-13 21:41:32.836  INFO 12178 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:41:32.837  INFO 12178 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:41:32.840  INFO 12178 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-13 21:41:32.844  INFO 12178 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-13 21:41:51.219  INFO 12132 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:41:51.221  INFO 12132 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:41:51.222  INFO 12132 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-03-13 21:41:51.228  INFO 12132 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-03-13 21:42:17.986  INFO 12300 --- [restartedMain] c.n.NbaHallOfHateApplication             : Starting NbaHallOfHateApplication on MacBook-Pro-Koder-Baertek.local with PID 12300 (/Users/koder/Documents/workspace/owner/nba-hall-of-hate/target/classes started by koder in /Users/koder/Documents/workspace/owner/nba-hall-of-hate)
+2020-03-13 21:42:17.989  INFO 12300 --- [restartedMain] c.n.NbaHallOfHateApplication             : No active profile set, falling back to default profiles: default
+2020-03-13 21:42:18.027  INFO 12300 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/koder/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-13 21:42:18.028  INFO 12300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-13 21:42:18.028  INFO 12300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-13 21:42:18.655  INFO 12300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-13 21:42:18.701  INFO 12300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 1 JPA repository interfaces.
+2020-03-13 21:42:19.382  INFO 12300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-13 21:42:19.391  INFO 12300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-13 21:42:19.391  INFO 12300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-13 21:42:19.446  INFO 12300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-13 21:42:19.447 DEBUG 12300 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-13 21:42:19.447  INFO 12300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1419 ms
+2020-03-13 21:42:19.501  INFO 12300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-13 21:42:19.574  INFO 12300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-13 21:42:19.579  INFO 12300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql:nbahoh'
+2020-03-13 21:42:19.696  INFO 12300 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 6.0.8 by Redgate
+2020-03-13 21:42:19.709  INFO 12300 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:postgresql:nbahoh (PostgreSQL 12.2)
+2020-03-13 21:42:19.738  INFO 12300 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2020-03-13 21:42:19.744  INFO 12300 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2020-03-13 21:42:19.745  INFO 12300 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2020-03-13 21:42:19.827  INFO 12300 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-13 21:42:19.873  INFO 12300 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-13 21:42:20.018  INFO 12300 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-13 21:42:20.092  INFO 12300 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-03-13 21:42:20.502  INFO 12300 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-13 21:42:20.508  INFO 12300 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-13 21:42:20.694  WARN 12300 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:42:20.694  WARN 12300 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-03-13 21:42:20.694  WARN 12300 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-03-13 21:42:21.079  WARN 12300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 21:42:21.237  INFO 12300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-13 21:42:21.265 DEBUG 12300 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-13 21:42:21.326 DEBUG 12300 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2020-03-13 21:42:21.386 DEBUG 12300 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /browser/**] in 'resourceHandlerMapping'
+2020-03-13 21:42:21.403 DEBUG 12300 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-13 21:42:21.718  INFO 12300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-13 21:42:21.766  INFO 12300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-13 21:42:21.770  INFO 12300 --- [restartedMain] c.n.NbaHallOfHateApplication             : Started NbaHallOfHateApplication in 4.103 seconds (JVM running for 4.53)
+2020-03-13 21:43:16.075  INFO 12300 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-13 21:43:16.076  INFO 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-13 21:43:16.076 DEBUG 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-03-13 21:43:16.095 DEBUG 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-03-13 21:43:16.095  INFO 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-03-13 21:43:16.103 DEBUG 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:43:16.107 DEBUG 12300 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:43:16.117 DEBUG 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:43:16.127 DEBUG 12300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:43:16.128 DEBUG 12300 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:43:16.182 DEBUG 12300 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@ac006ab]
+2020-03-13 21:43:16.247 DEBUG 12300 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:43:16.248 DEBUG 12300 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@ac006ab]
+2020-03-13 21:43:16.258 DEBUG 12300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:45:11.581 DEBUG 12300 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:45:11.582 DEBUG 12300 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:45:11.583 DEBUG 12300 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:45:11.587 DEBUG 12300 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:45:11.588 DEBUG 12300 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:45:11.590 DEBUG 12300 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@ab6a96b]
+2020-03-13 21:45:11.593 DEBUG 12300 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:45:11.594 DEBUG 12300 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@ab6a96b]
+2020-03-13 21:45:11.595 DEBUG 12300 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:01.265 DEBUG 12300 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:46:01.266 DEBUG 12300 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:01.266 DEBUG 12300 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:01.269 DEBUG 12300 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:46:01.269 DEBUG 12300 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:01.270 DEBUG 12300 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@11caf41c]
+2020-03-13 21:46:01.274 DEBUG 12300 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:46:01.275 DEBUG 12300 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@11caf41c]
+2020-03-13 21:46:01.276 DEBUG 12300 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:04.668 DEBUG 12300 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:46:04.668 DEBUG 12300 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:04.669 DEBUG 12300 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:04.672 DEBUG 12300 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:46:04.672 DEBUG 12300 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:04.673 DEBUG 12300 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@49b6c14b]
+2020-03-13 21:46:04.676 DEBUG 12300 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:46:04.676 DEBUG 12300 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@49b6c14b]
+2020-03-13 21:46:04.678 DEBUG 12300 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:40.283 DEBUG 12300 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:46:40.284 DEBUG 12300 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:40.285 DEBUG 12300 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:40.288 DEBUG 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:46:40.289 DEBUG 12300 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:40.292 DEBUG 12300 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@21c5a793]
+2020-03-13 21:46:40.297 DEBUG 12300 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:46:40.298 DEBUG 12300 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@21c5a793]
+2020-03-13 21:46:40.299 DEBUG 12300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:55.371 DEBUG 12300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:46:55.371 DEBUG 12300 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:55.372 DEBUG 12300 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:46:55.375 DEBUG 12300 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:46:55.375 DEBUG 12300 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:46:55.377 DEBUG 12300 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@51187d5]
+2020-03-13 21:46:55.380 DEBUG 12300 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:46:55.380 DEBUG 12300 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@51187d5]
+2020-03-13 21:46:55.381 DEBUG 12300 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:52:18.709 DEBUG 12300 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-13 21:52:18.709 DEBUG 12300 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:52:18.711 DEBUG 12300 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 21:52:18.713 DEBUG 12300 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-13 21:52:18.714 DEBUG 12300 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-13 21:52:18.715 DEBUG 12300 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@6f1f11c8]
+2020-03-13 21:52:18.719 DEBUG 12300 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-13 21:52:18.719 DEBUG 12300 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@6f1f11c8]
+2020-03-13 21:52:18.720 DEBUG 12300 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

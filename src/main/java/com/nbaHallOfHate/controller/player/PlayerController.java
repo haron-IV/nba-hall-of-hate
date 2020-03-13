@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/player")
+@CrossOrigin(origins = "http://localhost:8081")
 public class PlayerController {
 
     private PlayerService playerService;
