@@ -12,6 +12,9 @@ public class PlayerEntity {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "playerId")
+    private Integer playerId;
+
     @Column(name = "name")
     private String name;
 
@@ -44,6 +47,14 @@ public class PlayerEntity {
 
     public Long getId() {
         return id;
+    }
+
+    public Integer getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(Integer playerId) {
+        this.playerId = playerId;
     }
 
     public String getName() {

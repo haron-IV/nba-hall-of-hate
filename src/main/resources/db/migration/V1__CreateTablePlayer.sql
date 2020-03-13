@@ -1,6 +1,7 @@
 CREATE TABLE public.player
 (
     id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
+    playerId integer,
     name character varying(30),
     surname character varying(30),
     jersey_number integer,

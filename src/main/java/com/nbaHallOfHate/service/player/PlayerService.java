@@ -35,4 +35,8 @@ public class PlayerService {
         playerRepository.deleteById(id);
     }
 
+    public void isExist() {
+//        playerRepository
+    }
+
 }
