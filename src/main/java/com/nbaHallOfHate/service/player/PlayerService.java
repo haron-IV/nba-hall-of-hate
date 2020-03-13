@@ -1,5 +1,6 @@
 package com.nbaHallOfHate.service.player;
 
+import com.nbaHallOfHate.dto.player.PlayerDto;
 import com.nbaHallOfHate.entity.PlayerEntity;
 import com.nbaHallOfHate.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,14 @@ public class PlayerService {
         return playerRepository.findById(id);
     }
 
-    public PlayerEntity save(PlayerEntity playerEntity) {
+    public void update(Long id, PlayerEntity req) {
+        Optional<PlayerEntity> playerEntity = this.find(id);
+        playerEntity.get().setStatus(req.getStatus());
 
+        this.save(playerEntity.get());
+    }
+
+    public PlayerEntity save(PlayerEntity playerEntity) {
         return playerRepository.save(playerEntity);
     }
 
