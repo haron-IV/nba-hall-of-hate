@@ -33,14 +33,8 @@ public class PlayerController {
         return playerService.save(playerEntity);
     }
 
-//    Only if you need to change all properties in player dto, if you want to update only one property in dto you should use PATCH method
-//    @PutMapping
-//    public PlayerEntity updatePlayer(@RequestBody PlayerEntity playerEntity) {
-//        return playerService.save(playerEntity);
-//    }
-
-//    @DeleteMapping
-//    public boolean deletePlayer(@RequestParam int id) {
-//        return players.removeIf(el -> el.getId() == id);
-//    }
+    @DeleteMapping("/{id}")
+    public void deletePlayer(@PathVariable Long id) {
+        playerService.remove(id);
+    }
 }
