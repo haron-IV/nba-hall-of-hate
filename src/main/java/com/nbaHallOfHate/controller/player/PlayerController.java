@@ -25,12 +25,12 @@ public class PlayerController {
     }
 
     @PutMapping
-    public void updatePlayer(@RequestBody PlayerEntity req) {
+    public void updatePlayer(@RequestBody PlayerEntity req) throws Exception{
         playerService.update(req.getPlayerId(), req);
     }
 
     @PostMapping
-    public PlayerEntity addPlayer(@RequestBody PlayerEntity playerEntity) {
+    public PlayerEntity addPlayer(@RequestBody PlayerEntity playerEntity) throws Exception{
         return playerService.save(playerEntity);
     }
 
