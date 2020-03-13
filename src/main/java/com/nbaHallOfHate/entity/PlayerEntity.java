@@ -12,8 +12,8 @@ public class PlayerEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "playerId")
-    private Integer playerId;
+    @Column(name = "player_id")
+    private int playerId;
 
     @Column(name = "name")
     private String name;
