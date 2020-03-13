@@ -5,7 +5,7 @@ CREATE TABLE public.player
     surname character varying(30),
     jersey_number integer,
     height character varying(6),
-    birth_date date,
+    birth_date character varying(10),
     hate_count bigint,
     respect_count bigint,
     follow_count integer
