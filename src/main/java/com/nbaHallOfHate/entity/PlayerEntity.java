@@ -1,17 +1,19 @@
-package com.nbaHallOfHate.dto;
+package com.nbaHallOfHate.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-public class PlayerDto {
+@Table(name = "players")
+public class PlayerEntity {
 
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    private Integer id;
+
+    @Column(name = "status")
     private String status = "Active";
-    private int id;
+
 
     public int getId() {
         return id;
@@ -21,7 +23,9 @@ public class PlayerDto {
         this.id = id;
     }
 
-    public PlayerDto(int id, String status) {
+    public PlayerEntity() {}
+
+    public PlayerEntity(int id, String status) {
         this.id = id;
         this.status = status;
     }

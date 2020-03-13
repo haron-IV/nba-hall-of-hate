@@ -1,6 +1,8 @@
 package com.nbaHallOfHate.controller.player;
 
-import com.nbaHallOfHate.dto.PlayerDto;
+import com.nbaHallOfHate.entity.PlayerEntity;
+import com.nbaHallOfHate.service.player.PlayerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -10,41 +12,37 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/players")
 public class PlayerController {
-    private List<PlayerDto> players;
 
-    public PlayerController() {
-        players = new ArrayList<>();
+    private PlayerService playerService;
 
-        for (int i = 0; i < 5; i++) {
-            players.add(new PlayerDto(i, "Active"));
-        }
+    @Autowired
+    public PlayerController(PlayerService playerService) {
+        this.playerService = playerService;
     }
 
     @GetMapping("/all")
-    public List<PlayerDto> getAllPlayers() {
-        return players;
+    public Iterable<PlayerEntity> getAllPlayers() {
+        return playerService.findAll();
     }
 
     @GetMapping
-    public PlayerDto getPlayerById(@RequestParam int id) {
-        Optional<PlayerDto> player = players.stream().filter( el -> el.getId() == id ).findFirst();
-
-        return player.get();
+    public Optional<PlayerEntity> getPlayerById(@RequestParam int id) {
+        return playerService.find(id);
     }
 
     @PostMapping
-    public boolean addPlayer(@RequestBody PlayerDto playerDto) {
-        return players.add(playerDto);
+    public PlayerEntity addPlayer(@RequestBody PlayerEntity playerEntity) {
+        return playerService.save(playerEntity);
     }
 
 //    Only if you need to change all properties in player dto, if you want to update only one property in dto you should use PATCH method
-    @PutMapping
-    public boolean updatePlayer(@RequestBody PlayerDto playerDto) {
-        return players.add(playerDto);
-    }
-
-    @DeleteMapping
-    public boolean deletePlayer(@RequestParam int id) {
-        return players.removeIf(el -> el.getId() == id);
-    }
+//    @PutMapping
+//    public boolean updatePlayer(@RequestBody PlayerEntity playerEntity) {
+//        return players.add(playerEntity);
+//    }
+//
+//    @DeleteMapping
+//    public boolean deletePlayer(@RequestParam int id) {
+//        return players.removeIf(el -> el.getId() == id);
+//    }
 }

@@ -1,10 +1,10 @@
 package com.nbaHallOfHate.repository;
 
-import com.nbaHallOfHate.dto.PlayerDto;
+import com.nbaHallOfHate.entity.PlayerEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PlayerRepository  extends CrudRepository<PlayerDto, Integer> {
+public interface PlayerRepository  extends CrudRepository<PlayerEntity, Integer> {
 
 }
