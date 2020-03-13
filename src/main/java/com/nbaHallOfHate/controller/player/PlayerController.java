@@ -26,7 +26,7 @@ public class PlayerController {
 
     @PutMapping
     public void updatePlayer(@RequestBody PlayerEntity req) {
-        playerService.update(req.getId(), req);
+        playerService.update(req.getPlayerId(), req);
     }
 
     @PostMapping

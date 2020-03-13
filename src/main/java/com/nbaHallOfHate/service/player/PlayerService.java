@@ -35,8 +35,8 @@ public class PlayerService {
         playerRepository.deleteById(id);
     }
 
-    public void isExist() {
-//        playerRepository
+    public boolean isExist(Long id) {
+        return playerRepository.existsById(id);
     }
 
 }

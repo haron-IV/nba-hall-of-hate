@@ -6,14 +6,13 @@ import java.util.Date;
 @Entity
 @Table(name = "player")
 public class PlayerEntity {
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "id")
+//    private Long id;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
-
     @Column(name = "player_id")
-    private int playerId;
+    private Long playerId;
 
     @Column(name = "name")
     private String name;
@@ -45,15 +44,15 @@ public class PlayerEntity {
         this.name = name;
     }
 
-    public Long getId() {
-        return id;
-    }
+//    public Long getId() {
+//        return id;
+//    }
 
-    public Integer getPlayerId() {
+    public Long getPlayerId() {
         return playerId;
     }
 
-    public void setPlayerId(Integer playerId) {
+    public void setPlayerId(Long playerId) {
         this.playerId = playerId;
     }
 
