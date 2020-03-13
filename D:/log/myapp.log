@@ -9230,3 +9230,5 @@ java.lang.IllegalArgumentException: Can not set int field com.nbaHallOfHate.enti
 2020-03-13 19:49:16.832 DEBUG 7467 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2020-03-13 19:49:16.832 DEBUG 7467 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerEntity@39cbad6b]
 2020-03-13 19:49:16.835 DEBUG 7467 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-13 20:35:13.810  WARN 7467 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m30s150ms).
+2020-03-13 20:37:55.352  WARN 7467 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m41s543ms).
