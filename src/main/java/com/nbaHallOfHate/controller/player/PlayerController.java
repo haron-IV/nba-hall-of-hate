@@ -19,8 +19,8 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
-    @GetMapping
-    public Optional<PlayerEntity> getPlayerById(@RequestParam Long id) {
+    @GetMapping("/{id}")
+    public Optional<PlayerEntity> getPlayerById(@PathVariable Long id) {
         return playerService.find(id);
     }
 
