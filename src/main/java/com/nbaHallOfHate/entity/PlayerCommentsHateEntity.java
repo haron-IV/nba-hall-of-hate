@@ -1,59 +1,42 @@
 package com.nbaHallOfHate.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Entity
-@Table(name = "player")
-public class PlayerCommentsEntity {
-}
-
-
-
-public class PlayerEntity {
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "id")
-//    private Long id;
+@Table(name = "player_comment_hate")
+public class PlayerCommentsHateEntity {
 
     @Id
-    @Column(name = "player_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "comment_id")
+    @NotNull
+    private Long commentId;
+
+    @Column(name = "playerId")
     private Long playerId;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "author")
+    private String author;
 
-    @Column(name = "surname")
-    private String surname;
+    @Column(name = "created_date")
+    private Date createdDate;
 
-    @Column(name = "jersey_number")
-    private int jerseyNumber;
+    @Column(name = "content")
+    private String content;
 
-    @Column(name = "height")
-    private String height;
+    @Column(name = "comment_like")
+    private int commentLike;
 
-    @Column(name = "birth_date")
-    private String birthDate;
+    @Column(name = "comment_dislike")
+    private int commentDislike;
 
-    @Column(name = "hate_count")
-    private Long hateCount;
+    public PlayerCommentsHateEntity() {}
 
-    @Column(name = "respect_count")
-    private Long respectCount;
-
-    @Column(name = "follow_count")
-    private int followCount;
-
-    public PlayerEntity() {}
-
-    public PlayerEntity(String name) {
-        this.name = name;
+    public Long getCommentId() {
+        return commentId;
     }
-
-//    public Long getId() {
-//        return id;
-//    }
 
     public Long getPlayerId() {
         return playerId;
@@ -63,67 +46,43 @@ public class PlayerEntity {
         this.playerId = playerId;
     }
 
-    public String getName() {
-        return name;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
-    public String getSurname() {
-        return surname;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public int getJerseyNumber() {
-        return jerseyNumber;
+    public String getContent() {
+        return content;
     }
 
-    public void setJerseyNumber(int jerseyNumber) {
-        this.jerseyNumber = jerseyNumber;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getHeight() {
-        return height;
+    public int getCommentLike() {
+        return commentLike;
     }
 
-    public void setHeight(String height) {
-        this.height = height;
+    public void setCommentLike(int commentLike) {
+        this.commentLike = commentLike;
     }
 
-    public String getBirthDate() {
-        return birthDate;
+    public int getCommentDislike() {
+        return commentDislike;
     }
 
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public Long getHateCount() {
-        return hateCount;
-    }
-
-    public void setHateCount(Long hateCount) {
-        this.hateCount = hateCount;
-    }
-
-    public Long getRespectCount() {
-        return respectCount;
-    }
-
-    public void setRespectCount(Long respectCount) {
-        this.respectCount = respectCount;
-    }
-
-    public int getFollowCount() {
-        return followCount;
-    }
-
-    public void setFollowCount(int followCount) {
-        this.followCount = followCount;
+    public void setCommentDislike(int commentDislike) {
+        this.commentDislike = commentDislike;
     }
 }

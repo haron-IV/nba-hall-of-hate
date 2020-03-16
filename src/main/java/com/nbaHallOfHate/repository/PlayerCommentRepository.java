@@ -5,4 +5,4 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PlayerCommentsRepository extends CrudRepository<PlayerCommentsHateEntity, Long> {}
+public interface PlayerCommentRepository extends CrudRepository<PlayerCommentsHateEntity, Long>{}

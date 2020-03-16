@@ -1,6 +1,6 @@
 package com.nbaHallOfHate.controller.player;
 
-import com.nbaHallOfHate.service.player.PlayerService;
+import com.nbaHallOfHate.service.player.comment.PlayerCommentsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/player-comments")
 @CrossOrigin()
 public class PlayerCommentsController {
-    private PlayerService playerService;
+    private PlayerCommentsService playerCommentsService;
 
     @Autowired
-    public PlayerCommentsController(PlayerService playerService) {
-        this.playerService = playerService;
+    public PlayerCommentsController(PlayerCommentsService playerCommentsService) {
+        this.playerCommentsService = playerCommentsService;
     }
 
     @GetMapping("/hate")
-    public void getAllHateComments() {
-
+    public Iterable getAllHateComments() {
+        return playerCommentsService.getAllHateComments();
     }
 }
 
