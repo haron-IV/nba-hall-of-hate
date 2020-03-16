@@ -8,7 +8,8 @@ CREATE TABLE public.player
     birth_date character varying(10),
     hate_count bigint,
     respect_count bigint,
-    follow_count integer
+    follow_count integer,
+    CONSTRAINT player_id_pk PRIMARY KEY (player_id)
 );
 
 ALTER TABLE public.player
