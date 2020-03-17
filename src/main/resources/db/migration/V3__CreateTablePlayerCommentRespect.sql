@@ -1,4 +1,4 @@
-CREATE TABLE public.player_comment_hate
+CREATE TABLE public.player_comment_respect
 (
     comment_id SERIAL PRIMARY KEY,
     player_id bigint NOT NULL,
@@ -14,5 +14,5 @@ CREATE TABLE public.player_comment_hate
         NOT VALID
 );
 
-ALTER TABLE public.player_comment_hate
+ALTER TABLE public.player_comment_respect
     OWNER to koder;
