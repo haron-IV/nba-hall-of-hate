@@ -8064,3 +8064,1010 @@ Migration checksum mismatch for migration version 2
 2020-03-17 00:55:57.952 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2020-03-17 00:55:57.952 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.nbaHallOfHate.entity.PlayerCommentsHateEntity@6ca4c605]
 2020-03-17 00:55:57.954 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 00:56:38.957 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 00:56:38.958 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 00:56:38.985 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 00:56:38.986 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@32152b40, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 00:56:38.991 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:06:28.774 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comment/hate", parameters={}
+2020-03-17 01:06:28.774 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:06:28.774 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comment/hate", parameters={}
+2020-03-17 01:06:28.778 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:06:28.780 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:06:28.784 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+2020-03-17 01:06:28.785 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+2020-03-17 01:06:28.787 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-17 01:06:28.787 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
+2020-03-17 01:06:28.790 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:06:28.792 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:06:28.800 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:06:28.801 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@d36cace]]
+2020-03-17 01:06:28.803 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:06:28.811 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:06:28.812 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:06:28.812 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:06:28.816 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:06:28.816 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:06:28.818 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@1012647d]
+2020-03-17 01:06:28.829 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:06:28.842 ERROR 49705 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:06:28.847 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:06:28.850 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:06:28.860 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:06:28.866 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:06:28 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:06:28.875 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:07:15.974 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:15.979 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:15.979 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:15.980 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:15.980 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:15.981 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:15.987 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:15.987 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:15.987 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:15.988 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:16.000 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:16.001 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@5123e745, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:07:16.002 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:16.005 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:16.005 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@5b7e5a6d, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:07:16.011 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.370 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:07:24.371 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:07:24.372 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:24.372 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.372 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:24.373 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.377 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:07:24.377 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:24.377 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:24.377 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:07:24.377 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:24.377 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:24.379 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.385 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:24.385 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:24.385 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:24.386 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@2913b34c, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:07:24.387 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:24.387 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@42ed8b37]]
+2020-03-17 01:07:24.388 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.391 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.398 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:24.398 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@17019201, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:07:24.400 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.405 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:07:24.406 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:07:24.406 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:24.414 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:07:24.414 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:07:24.415 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@a87e3f8]
+2020-03-17 01:07:24.420 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:07:24.424 ERROR 49705 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:07:24.427 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:07:24.428 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:07:24.432 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:24.432 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:07:24 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:07:24.434 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:07:46.672 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:46.672 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:46.673 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:46.673 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:46.673 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:46.674 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:46.677 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:46.677 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:07:46.678 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:46.678 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:07:46.683 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:46.683 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@3f7d6ade, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:07:46.683 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:07:46.683 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@61786d53, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:07:46.685 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:07:46.685 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.404 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:08:09.405 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:08:09.405 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:09.405 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:09.405 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.406 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.407 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:09.407 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:09.408 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.419 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:09.420 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:09.420 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:08:09.420 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:09.420 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:09.421 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:08:09.426 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:08:09.426 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:08:09.426 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:08:09.427 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@72797a45]]
+2020-03-17 01:08:09.427 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@7ae26fec, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:08:09.427 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@7d7c112b, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:08:09.429 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.429 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.429 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.440 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:08:09.441 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:08:09.442 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:09.444 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:08:09.444 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:08:09.445 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@3902e01e]
+2020-03-17 01:08:09.450 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:08:09.452 ERROR 49705 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:08:09.453 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:08:09.453 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:08:09.454 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:08:09.455 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:08:09 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:08:09.456 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:08:58.481 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:58.482 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:58.482 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:58.482 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:58.482 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:58.482 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:58.492 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:58.493 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:58.502 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:08:58.503 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:08:58.516 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:08:58.516 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@61cefa62, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:08:58.518 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:08:58.518 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@457d8580, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:08:58.520 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:08:58.521 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.910 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:09:04.911 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:09:04.911 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:09:04.911 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:09:04.911 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.912 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.916 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:09:04.916 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:09:04.917 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:09:04.917 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:09:04.918 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:09:04.918 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.918 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:09:04.922 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:09:04.923 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:09:04.926 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:09:04.926 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@53734859]]
+2020-03-17 01:09:04.927 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.928 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:09:04.928 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@4e958170, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:09:04.929 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:09:04.930 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@5547f67f, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:09:04.930 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.931 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.936 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:09:04.937 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:09:04.938 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:09:04.941 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:09:04.942 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:09:04.943 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@5f05d137]
+2020-03-17 01:09:04.944 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:09:04.945 ERROR 49705 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:09:04.946 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:09:04.946 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:09:04.947 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:09:04.947 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:09:04 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:09:04.948 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:10:53.662 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:10:53.662 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:10:53.663 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:10:53.663 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:10:53.663 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:10:53.663 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:10:53.668 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:10:53.668 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:10:53.669 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:10:53.669 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:10:53.673 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:10:53.673 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:10:53.673 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@4a2814d2, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:10:53.673 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@56cde552, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:10:53.675 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:10:53.675 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.059 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:11:58.059 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:11:58.059 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:11:58.060 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:11:58.060 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:11:58.060 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:11:58.061 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.061 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.061 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.067 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:11:58.067 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:11:58.067 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:11:58.067 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:11:58.067 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:11:58.068 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:11:58.071 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:11:58.072 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:11:58.072 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@59e90635]]
+2020-03-17 01:11:58.072 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:11:58.072 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@4b4aa70d, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:11:58.072 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@74ff5739, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:11:58.073 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.073 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.073 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.090 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:11:58.090 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:11:58.091 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:11:58.093 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:11:58.094 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:11:58.095 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@2fc8b5ba]
+2020-03-17 01:11:58.099 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:11:58.101 ERROR 49705 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:11:58.102 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:11:58.103 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:11:58.104 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:11:58.104 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:11:58 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:11:58.105 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:12:22.068 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:22.069 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:22.069 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:22.069 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:22.070 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:22.070 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:22.076 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:22.076 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:22.076 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:22.076 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:22.084 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:22.084 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@5b1c2e6a, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:22.088 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:22.088 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:22.089 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@1255c92a, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:22.095 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.524 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:12:31.524 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:12:31.525 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.526 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:31.526 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:31.527 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.531 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:12:31.531 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:31.531 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:31.531 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:12:31.532 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.534 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:31.535 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:31.537 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:31.537 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:31.538 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@521206f9]]
+2020-03-17 01:12:31.538 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:31.540 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.542 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:31.542 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@640fbecb, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:31.544 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:31.545 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@1a927bde, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:31.545 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.547 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.554 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:12:31.555 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:12:31.555 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:31.559 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:12:31.559 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:12:31.560 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@38ab0ef1]
+2020-03-17 01:12:31.562 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:12:31.563 ERROR 49705 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:12:31.564 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:12:31.565 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:12:31.567 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:31.568 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:12:31 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:12:31.569 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:12:41.666 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:41.667 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:41.667 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:41.666 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:41.672 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:41.673 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:41.678 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:41.678 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:41.678 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:41.678 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:41.684 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:41.684 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:41.684 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@66944e1b, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:41.684 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@400aa8a2, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:41.687 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:41.689 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:52.618 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:52.620 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:52.619 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:52.620 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:52.621 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:52.621 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:52.626 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:52.626 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:12:52.626 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:52.627 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:12:52.631 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:52.631 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@12e77dbb, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:52.633 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:12:52.634 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@2e7d8afe, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:12:52.645 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:12:52.655 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:06.382 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:06.382 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:06.383 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:06.385 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:06.385 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:06.386 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:06.394 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:06.395 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:06.396 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:06.396 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:06.420 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:06.420 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@3e8aca27, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:06.420 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:06.421 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@5aa40f8, com.nbaHallOfHate.entity.PlayerCommentsH (truncated)...]
+2020-03-17 01:13:06.422 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:06.423 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:28.431 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:28.432 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:28.432 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:28.432 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:28.432 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:28.432 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:28.435 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:28.435 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:28.435 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:28.435 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:28.439 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:28.439 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:28.439 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@4b44b66f, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:28.439 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@ca2232b, com.nbaHallOfHate.entity.PlayerCommentsH (truncated)...]
+2020-03-17 01:13:28.440 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:28.440 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:32.688 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:32.688 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:32.688 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:32.688 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:32.689 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:32.689 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:32.692 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:32.692 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:32.693 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:32.693 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:32.696 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:32.696 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:32.696 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@115fb308, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:32.696 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@10253992, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:32.697 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:32.697 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:36.348 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:36.349 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:36.349 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:36.349 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:36.350 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:36.350 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:36.353 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:36.353 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:36.353 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:36.353 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:36.356 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:36.356 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:36.357 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@2eae549c, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:36.357 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@4701b72a, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:36.358 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:36.358 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.333 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:13:47.334 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:13:47.334 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.336 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:47.336 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:47.337 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.342 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:47.342 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:47.343 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.343 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:13:47.344 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:13:47.347 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:47.348 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:47.349 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:13:47.350 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:13:47.351 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:47.351 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@4bce99d2]]
+2020-03-17 01:13:47.352 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:47.352 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.352 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@330bc738, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:47.354 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:47.354 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@5e4e3c23, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:13:47.357 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.357 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.364 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:13:47.364 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:13:47.365 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:13:47.369 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:13:47.369 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:13:47.370 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@3bab246e]
+2020-03-17 01:13:47.373 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:13:47.375 ERROR 49705 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:13:47.376 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:13:47.377 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:13:47.379 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:13:47.379 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:13:47 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:13:47.381 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:14:12.642 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:12.642 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:12.643 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:12.647 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:12.647 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:12.648 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:12.658 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:12.658 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:12.664 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:12.664 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:12.677 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:12.678 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@1eea32a2, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:14:12.680 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:12.680 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:12.680 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@2be9cbdc, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:14:12.685 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:13.513 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:13.513 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:13.513 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:13.514 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:13.514 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:13.514 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:13.517 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:13.517 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:13.518 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:13.518 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:13.521 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:13.521 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:13.521 DEBUG 49705 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@79d99129, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:14:13.521 DEBUG 49705 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@30371be3, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:14:13.522 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:13.522 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.531 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player/319", parameters={}
+2020-03-17 01:14:21.532 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:14:21.533 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.532 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:21.533 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:21.534 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.538 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:21.539 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:21.538 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:21.539 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.539 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:21.540 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player/319", parameters={}
+2020-03-17 01:14:21.541 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#getPlayerById(Long)
+2020-03-17 01:14:21.544 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:14:21.544 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:14:21.545 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:21.545 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:21.545 DEBUG 49705 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@87a8524, com.nbaHallOfHate.entity.PlayerCommentsH (truncated)...]
+2020-03-17 01:14:21.545 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Optional[com.nbaHallOfHate.entity.PlayerEntity@653efde8]]
+2020-03-17 01:14:21.546 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.546 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.549 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:21.550 DEBUG 49705 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@3daa04de, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:14:21.554 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.560 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player", parameters={}
+2020-03-17 01:14:21.561 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:14:21.562 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:14:21.565 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/player", parameters={}
+2020-03-17 01:14:21.565 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerController#addPlayer(PlayerEntity)
+2020-03-17 01:14:21.566 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.nbaHallOfHate.entity.PlayerEntity@7b4ddc93]
+2020-03-17 01:14:21.569 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.Exception: This card already exist in database.
+2020-03-17 01:14:21.571 ERROR 49705 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: This card already exist in database.] with root cause
+
+java.lang.Exception: This card already exist in database.
+	at com.nbaHallOfHate.service.player.PlayerService.save(PlayerService.java:34) ~[classes/:na]
+	at com.nbaHallOfHate.controller.player.PlayerController.addPlayer(PlayerController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_242]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
+
+2020-03-17 01:14:21.572 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2020-03-17 01:14:21.573 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-03-17 01:14:21.574 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:14:21.574 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Mar 17 01:14:21 CET 2020, status=500, error=Internal Server Error, message=This card  (truncated)...]
+2020-03-17 01:14:21.575 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2020-03-17 01:16:01.577 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:01.577 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:01.578 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:01.578 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:01.579 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:01.579 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:01.586 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:01.586 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:01.587 DEBUG 49705 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:01.587 DEBUG 49705 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:01.591 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:16:01.591 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:16:01.591 DEBUG 49705 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@41839eb2, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:16:01.591 DEBUG 49705 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@1cd509b, com.nbaHallOfHate.entity.PlayerCommentsH (truncated)...]
+2020-03-17 01:16:01.593 DEBUG 49705 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:01.594 DEBUG 49705 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:10.133 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:10.133 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:10.134 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:10.134 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:10.134 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:10.134 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:10.138 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:10.138 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:10.138 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:10.139 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:10.142 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:16:10.142 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@6d12d762, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:16:10.142 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:16:10.143 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@2de59687, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:16:10.143 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:10.143 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:14.385 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:14.386 DEBUG 49705 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:14.387 DEBUG 49705 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:14.387 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:14.387 DEBUG 49705 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:14.388 DEBUG 49705 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:14.397 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:14.397 DEBUG 49705 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:14.398 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:16:14.398 DEBUG 49705 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:16:14.405 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:16:14.406 DEBUG 49705 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@90ea57, com.nbaHallOfHate.entity.PlayerCommentsHa (truncated)...]
+2020-03-17 01:16:14.406 DEBUG 49705 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:16:14.406 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:16:14.407 DEBUG 49705 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@1012ee09, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:16:14.409 DEBUG 49705 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:17:25.134 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:17:25.134 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/player-comments/hate", parameters={}
+2020-03-17 01:17:25.135 DEBUG 49705 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:17:25.135 DEBUG 49705 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:17:25.135 DEBUG 49705 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:17:25.135 DEBUG 49705 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:17:25.140 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:17:25.140 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/player-comments/hate", parameters={}
+2020-03-17 01:17:25.140 DEBUG 49705 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:17:25.140 DEBUG 49705 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.nbaHallOfHate.controller.player.PlayerCommentsController#getAllHateComments()
+2020-03-17 01:17:25.144 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:17:25.144 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-03-17 01:17:25.144 DEBUG 49705 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@71fe2998, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:17:25.144 DEBUG 49705 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.nbaHallOfHate.entity.PlayerCommentsHateEntity@2d80468f, com.nbaHallOfHate.entity.PlayerComments (truncated)...]
+2020-03-17 01:17:25.146 DEBUG 49705 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:17:25.146 DEBUG 49705 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-17 01:19:50.504  INFO 49705 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-17 01:19:50.507  INFO 49705 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-17 01:19:50.514  INFO 49705 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-17 01:19:50.519  INFO 49705 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
