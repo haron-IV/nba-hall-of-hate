@@ -1,16 +1,13 @@
-package com.example.nbahallofhate;
+package com.nbaHallOfHate;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@Disabled
 @SpringBootTest
 class NbaHallOfHateApplicationTests {
 
-    @Disabled
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
