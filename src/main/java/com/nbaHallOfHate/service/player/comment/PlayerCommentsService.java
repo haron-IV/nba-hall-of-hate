@@ -1,7 +1,7 @@
 package com.nbaHallOfHate.service.player.comment;
 
 import com.nbaHallOfHate.entity.PlayerCommentsHateEntity;
-import com.nbaHallOfHate.repository.PlayerCommentsRepository;
+import com.nbaHallOfHate.repository.PlayerCommentsHateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @Service
 public class PlayerCommentsService {
-    private PlayerCommentsRepository playerCommentsRepository;
+    private PlayerCommentsHateRepository playerCommentsHateRepository;
 
     @Autowired
-    public PlayerCommentsService(PlayerCommentsRepository playerCommentsRepository) {
-        this.playerCommentsRepository = playerCommentsRepository;
+    public PlayerCommentsService(PlayerCommentsHateRepository playerCommentsHateRepository) {
+        this.playerCommentsHateRepository = playerCommentsHateRepository;
     }
 
     public Iterable<PlayerCommentsHateEntity> getAllHateComments() {
-        return playerCommentsRepository.findAll();
+        return playerCommentsHateRepository.findAll();
     }
 
     @GetMapping("/hate/{id}")
     public Iterable<PlayerCommentsHateEntity> showAllHateCommentForPlayerId(@PathVariable Long id) throws Exception {
-        return playerCommentsRepository.findAllHateCommentByPlayerId(id);
+        return playerCommentsHateRepository.findAllHateCommentByPlayerId(id);
     }
 
 //    TODO: add get all respect comments

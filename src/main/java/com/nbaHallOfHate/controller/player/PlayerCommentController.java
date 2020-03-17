@@ -1,7 +1,7 @@
 package com.nbaHallOfHate.controller.player;
 
 import com.nbaHallOfHate.entity.PlayerCommentsHateEntity;
-import com.nbaHallOfHate.repository.PlayerCommentsRepository;
+import com.nbaHallOfHate.repository.PlayerCommentsHateRepository;
 import com.nbaHallOfHate.service.player.comment.PlayerCommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin()
 public class PlayerCommentController {
     private PlayerCommentService playerCommentService;
-    private PlayerCommentsRepository playerCommentsRepository;
+    private PlayerCommentsHateRepository playerCommentsHateRepository;
 
     @Autowired
-    public PlayerCommentController(PlayerCommentService playerCommentService, PlayerCommentsRepository playerCommentsRepository) {
+    public PlayerCommentController(PlayerCommentService playerCommentService, PlayerCommentsHateRepository playerCommentsHateRepository) {
         this.playerCommentService = playerCommentService;
-        this.playerCommentsRepository = playerCommentsRepository;
+        this.playerCommentsHateRepository = playerCommentsHateRepository;
     }
 
     @PostMapping("/hate")

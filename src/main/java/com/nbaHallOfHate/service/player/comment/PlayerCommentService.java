@@ -1,17 +1,17 @@
 package com.nbaHallOfHate.service.player.comment;
 
 import com.nbaHallOfHate.entity.PlayerCommentsHateEntity;
-import com.nbaHallOfHate.repository.PlayerCommentsRepository;
+import com.nbaHallOfHate.repository.PlayerCommentsHateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PlayerCommentService {
-    private PlayerCommentsRepository playerCommentRepository;
+    private PlayerCommentsHateRepository playerCommentRepository;
 
     @Autowired
-    public PlayerCommentService(PlayerCommentsRepository playerCommentsRepository) {
-        this.playerCommentRepository = playerCommentsRepository;
+    public PlayerCommentService(PlayerCommentsHateRepository playerCommentsHateRepository) {
+        this.playerCommentRepository = playerCommentsHateRepository;
     }
 
     public PlayerCommentsHateEntity addHateComment(PlayerCommentsHateEntity playerCommentsHateEntity) throws Exception{
