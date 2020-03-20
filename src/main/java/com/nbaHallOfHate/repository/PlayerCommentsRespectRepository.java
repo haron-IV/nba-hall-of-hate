@@ -11,4 +11,3 @@ public interface PlayerCommentsRespectRepository extends CrudRepository<PlayerCo
     @Query("from PlayerCommentsRespectEntity where player_id = :id")
     Iterable<PlayerCommentsRespectEntity> findAllRespectCommentByPlayerId(@Param("id") Long id);
 }
-
