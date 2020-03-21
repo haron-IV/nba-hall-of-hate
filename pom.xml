@@ -81,6 +81,7 @@
 				<artifactId>flyway-maven-plugin</artifactId>
 				<!-- 	<version>5.2.4</version> -->
 			</plugin>
+
 		</plugins>
 	</build>
 

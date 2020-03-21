@@ -38,4 +38,9 @@ public class PlayerController {
     public void deletePlayer(@PathVariable Long id) {
         playerService.remove(id);
     }
+
+    @PutMapping("/addHate")
+    public PlayerEntity addHateToPlayer(@RequestBody PlayerEntity req) throws Exception{
+        return playerService.addHateToPlayer(req);
+    }
 }

@@ -20,19 +20,28 @@ public class PlayerService {
         return playerRepository.findById(id);
     }
 
-    public void update(Long id, PlayerEntity req) throws Exception{
+    public void update(Long id, PlayerEntity req) throws Exception {
         Optional<PlayerEntity> playerEntity = this.find(id);
         playerEntity.get().setName(req.getName());
 
         this.save(playerEntity.get());
     }
 
-    public PlayerEntity save(PlayerEntity playerEntity) throws Exception{
-        if (!this.isExist(playerEntity.getPlayerId())){
+    public PlayerEntity save(PlayerEntity playerEntity) throws Exception {
+//        if (!this.isExist(playerEntity.getPlayerId())){
             return playerRepository.save(playerEntity);
-        } else {
-            throw new Exception("This card already exist in database.");
-        }
+//        } else {
+//            throw new Exception("This card already exist in database.");
+//        }
+    }
+
+    public PlayerEntity addHateToPlayer(PlayerEntity req) throws Exception {
+        PlayerEntity playerEntity = this.find(req.getPlayerId()).get();
+        Long playerHateCount = playerEntity.getHateCount();
+        playerEntity.setHateCount(playerHateCount + 1);
+        this.save(playerEntity);
+
+        return playerEntity;
     }
 
     public void remove(Long id) {
