@@ -43,4 +43,9 @@ public class PlayerController {
     public PlayerEntity addHateToPlayer(@RequestBody PlayerEntity req) throws Exception{
         return playerService.addHateToPlayer(req);
     }
+
+    @PutMapping("/addRespect")
+    public PlayerEntity addRespectToPlayer(@RequestBody PlayerEntity req) throws Exception{
+        return playerService.addRespectToPlayer(req);
+    }
 }

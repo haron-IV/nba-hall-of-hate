@@ -38,7 +38,16 @@ public class PlayerService {
     public PlayerEntity addHateToPlayer(PlayerEntity req) throws Exception {
         PlayerEntity playerEntity = this.find(req.getPlayerId()).get();
         Long playerHateCount = playerEntity.getHateCount();
-        playerEntity.setHateCount(playerHateCount + 1);
+        playerEntity.setHateCount(playerHateCount + 2);
+        this.save(playerEntity);
+
+        return playerEntity;
+    }
+
+    public PlayerEntity addRespectToPlayer(PlayerEntity req) throws Exception {
+        PlayerEntity playerEntity = this.find(req.getPlayerId()).get();
+        Long playerRespectCount = playerEntity.getRespectCount();
+        playerEntity.setRespectCount(playerRespectCount + 1);
         this.save(playerEntity);
 
         return playerEntity;
