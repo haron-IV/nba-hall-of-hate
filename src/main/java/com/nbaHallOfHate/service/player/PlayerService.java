@@ -28,18 +28,18 @@ public class PlayerService {
     }
 
     public PlayerEntity save(PlayerEntity playerEntity) throws Exception {
-//        if (!this.isExist(playerEntity.getPlayerId())){
+        if (!this.isExist(playerEntity.getPlayerId())){
             return playerRepository.save(playerEntity);
-//        } else {
-//            throw new Exception("This card already exist in database.");
-//        }
+        } else {
+            throw new Exception("This card already exist in database.");
+        }
     }
 
     public PlayerEntity addHateToPlayer(PlayerEntity req) throws Exception {
         PlayerEntity playerEntity = this.find(req.getPlayerId()).get();
         Long playerHateCount = playerEntity.getHateCount();
         playerEntity.setHateCount(playerHateCount + 2);
-        this.save(playerEntity);
+        playerRepository.save(playerEntity);
 
         return playerEntity;
     }
@@ -48,7 +48,7 @@ public class PlayerService {
         PlayerEntity playerEntity = this.find(req.getPlayerId()).get();
         Long playerRespectCount = playerEntity.getRespectCount();
         playerEntity.setRespectCount(playerRespectCount + 1);
-        this.save(playerEntity);
+        playerRepository.save(playerEntity);
 
         return playerEntity;
     }
