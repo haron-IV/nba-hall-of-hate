@@ -5,6 +5,8 @@ import com.nbaHallOfHate.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PlayersService {
     private PlayerRepository playerRepository;
@@ -14,7 +16,7 @@ public class PlayersService {
         this.playerRepository = playerRepository;
     }
 
-    public Iterable<PlayerEntity> findAll() {
-        return playerRepository.findAll();
+    public List<PlayerEntity> findAll(int limit) {
+        return playerRepository.findAllPlayers(limit);
     }
 }

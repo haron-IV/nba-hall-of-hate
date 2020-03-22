@@ -5,6 +5,8 @@ import com.nbaHallOfHate.service.player.PlayersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/players")
 public class PlayersController {
@@ -15,8 +17,8 @@ public class PlayersController {
         this.playersService = playersService;
     }
 
-    @GetMapping
-    public Iterable<PlayerEntity> getAllPlayers() {
-        return playersService.findAll();
+    @GetMapping("/{limit}")
+    public List<PlayerEntity> getAllPlayers(@PathVariable int limit) {
+        return playersService.findAll(limit);
     }
 }
