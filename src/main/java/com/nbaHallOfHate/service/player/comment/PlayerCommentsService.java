@@ -20,6 +20,11 @@ public class PlayerCommentsService {
         return playerCommentsHateRepository.findAll();
     }
 
+    public Iterable<PlayerCommentsHateEntity> getAllHateCommentByPlayerIdWithLimit(Long id, int limit) {
+        return playerCommentsHateRepository.getAllHateCommentByPlayerIdWithLimit(id, limit);
+    }
+
+    //TODO: move this to controller file
     @GetMapping("/hate/{id}")
     public Iterable<PlayerCommentsHateEntity> showAllHateCommentForPlayerId(@PathVariable Long id) throws Exception {
         return playerCommentsHateRepository.findAllHateCommentByPlayerId(id);
