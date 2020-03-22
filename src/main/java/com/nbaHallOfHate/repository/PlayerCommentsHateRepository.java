@@ -10,4 +10,7 @@ import org.springframework.stereotype.Repository;
 public interface PlayerCommentsHateRepository extends CrudRepository<PlayerCommentsHateEntity, Long> {
     @Query("from PlayerCommentsHateEntity where player_id = :id")
     Iterable<PlayerCommentsHateEntity> findAllHateCommentByPlayerId(@Param("id") Long id);
+
+    @Query(nativeQuery = true, value = "SELECT COUNT(*) FROM public.player_comment_hate WHERE player_id = :id")
+    Long getCountOfHateCommentByPlayerId(@Param("id") Long id);
 }

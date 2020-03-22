@@ -1,5 +1,6 @@
 package com.nbaHallOfHate.controller.player;
 
+import com.nbaHallOfHate.dto.player.PlayerCommentCountDto;
 import com.nbaHallOfHate.entity.PlayerCommentsHateEntity;
 import com.nbaHallOfHate.entity.PlayerCommentsRespectEntity;
 import com.nbaHallOfHate.repository.PlayerCommentsHateRepository;
@@ -36,6 +37,15 @@ public class PlayerCommentsController {
     @GetMapping("/respect/{id}")
     public Iterable<PlayerCommentsRespectEntity> getAllRespectComments(@PathVariable Long id) {
         return playerCommentsRespectRepository.findAllRespectCommentByPlayerId(id);
+    }
+
+    @GetMapping("/{id}/count")
+    public PlayerCommentCountDto count(@PathVariable Long id) {
+        PlayerCommentCountDto playerCommentCountDto = new PlayerCommentCountDto();
+        playerCommentCountDto.setRespectCount(playerCommentsRespectRepository.getCountOfRespectCommentByPlayerId(id));
+        playerCommentCountDto.setHateCount(playerCommentsHateRepository.getCountOfHateCommentByPlayerId(id));
+
+        return  playerCommentCountDto;
     }
 }
 
