@@ -52,5 +52,10 @@ public class PlayerCommentsController {
     public Iterable<PlayerCommentsHateEntity> getAllHateCommentsByIdWithLimit(@PathVariable Long id, @PathVariable int limit) {
         return playerCommentsService.getAllHateCommentByPlayerIdWithLimit(id, limit);
     }
+
+    @GetMapping("/respect/{id}/{limit}")
+    public Iterable<PlayerCommentsRespectEntity> getAllRespectCommentsByIdWithLimit(@PathVariable Long id, @PathVariable int limit) {
+        return playerCommentsService.getAllRespectCommentByPlayerIdWithLimit(id, limit);
+    }
 }
 
