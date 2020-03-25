@@ -1,3 +1,5 @@
+CREATE ROLE koder admin;
+
 CREATE TABLE public.player
 (
     player_id bigint NOT NULL,
