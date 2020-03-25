@@ -1,7 +1,7 @@
 CREATE TABLE public.player
 (
     player_id bigint NOT NULL,
-    views bigint,
+    views bigint default 0,
     name character varying(30),
     surname character varying(30),
     jersey_number integer,

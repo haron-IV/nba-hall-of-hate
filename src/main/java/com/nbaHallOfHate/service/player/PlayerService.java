@@ -61,4 +61,13 @@ public class PlayerService {
         return playerRepository.existsById(id);
     }
 
+    public PlayerEntity addPlayerView (Long id) {
+        PlayerEntity playerEntity = this.find(id).get();
+        Long views = playerEntity.getViews();
+        playerEntity.setViews(views + 1);
+        playerRepository.save(playerEntity);
+
+        return playerEntity;
+    }
+
 }

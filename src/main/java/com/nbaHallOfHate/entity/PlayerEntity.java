@@ -5,9 +5,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "player")
 public class PlayerEntity {
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "id")
-//    private Long id;
 
     @Id
     @Column(name = "player_id")
@@ -45,10 +42,6 @@ public class PlayerEntity {
     public PlayerEntity(String name) {
         this.name = name;
     }
-
-//    public Long getId() {
-//        return id;
-//    }
 
     public Long getPlayerId() {
         return playerId;
@@ -121,4 +114,8 @@ public class PlayerEntity {
     public void setFollowCount(int followCount) {
         this.followCount = followCount;
     }
+
+    public Long getViews() { return views; }
+
+    public void setViews(Long views) { this.views = views; }
 }

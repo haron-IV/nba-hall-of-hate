@@ -21,6 +21,7 @@ public class PlayerController {
 
     @GetMapping("/{id}")
     public Optional<PlayerEntity> getPlayerById(@PathVariable Long id) {
+        playerService.addPlayerView(id);
         return playerService.find(id);
     }
 
