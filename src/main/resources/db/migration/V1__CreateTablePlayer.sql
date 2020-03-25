@@ -1,5 +1,6 @@
-
+CREATE USER koder;
 CREATE ROLE koder;
+GRANT ALL PRIVILEGES ON DATABASE nbahoh TO koder;
 SET ROLE koder;
 CREATE TABLE public.player
 (
