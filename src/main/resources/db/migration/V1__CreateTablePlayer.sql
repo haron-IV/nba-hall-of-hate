@@ -1,4 +1,4 @@
-CREATE ROLE koder admin;
+CREATE ROLE koder;
 
 CREATE TABLE public.player
 (
