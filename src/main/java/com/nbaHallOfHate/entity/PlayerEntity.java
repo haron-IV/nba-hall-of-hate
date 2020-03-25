@@ -13,6 +13,9 @@ public class PlayerEntity {
     @Column(name = "player_id")
     private Long playerId;
 
+    @Column(name = "views")
+    private Long views;
+
     @Column(name = "name")
     private String name;
 

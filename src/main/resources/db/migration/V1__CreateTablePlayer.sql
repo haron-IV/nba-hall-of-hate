@@ -1,8 +1,8 @@
 CREATE TABLE public.player
 (
     player_id bigint NOT NULL,
-    name character varying(30),
     views bigint,
+    name character varying(30),
     surname character varying(30),
     jersey_number integer,
     height character varying(6),
