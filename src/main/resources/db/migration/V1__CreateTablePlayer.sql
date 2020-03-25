@@ -1,3 +1,4 @@
+SET ROLE koder;
 CREATE ROLE koder;
 
 CREATE TABLE public.player
