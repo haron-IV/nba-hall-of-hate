@@ -1,7 +1,4 @@
-CREATE USER koder;
-CREATE ROLE koder;
-GRANT ALL PRIVILEGES ON DATABASE nbahoh TO koder;
-SET ROLE koder;
+
 CREATE TABLE public.player
 (
     player_id bigint NOT NULL,
@@ -18,4 +15,4 @@ CREATE TABLE public.player
 );
 
 ALTER TABLE public.player
-    OWNER to koder;
+    OWNER to ipxqayfdetskjg;
