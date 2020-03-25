@@ -15,4 +15,4 @@ CREATE TABLE public.player_comment_hate
 );
 
 ALTER TABLE public.player_comment_hate
-    OWNER to koder;
+    OWNER to ipxqayfdetskjg;
