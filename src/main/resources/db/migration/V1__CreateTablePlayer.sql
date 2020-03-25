@@ -1,6 +1,6 @@
-SET ROLE koder;
-CREATE ROLE koder;
 
+CREATE ROLE koder;
+SET ROLE koder;
 CREATE TABLE public.player
 (
     player_id bigint NOT NULL,
