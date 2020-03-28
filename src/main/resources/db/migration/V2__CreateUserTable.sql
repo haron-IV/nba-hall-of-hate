@@ -1,8 +1,9 @@
-CREATE TABLE public.user
+CREATE TABLE public.users
 (
-    user_id character varying(100) PRIMARY KEY,
-    username character varying(25)
+    user_id bigint NOT NULL,
+    username character varying(25) UNIQUE,
+    CONSTRAINT user_id_pk PRIMARY KEY (user_id)
 );
 
-ALTER TABLE public.user
+ALTER TABLE public.users
     OWNER to ipxqayfdetskjg;

@@ -1,20 +1,20 @@
 package com.nbaHallOfHate.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class UserEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @NotNull
     @Column(name = "user_id")
     private Long userId;
 
     @Column(name = "username")
-    private Long username;
+    private String username;
 
     public UserEntity() {}
 
@@ -26,11 +26,11 @@ public class UserEntity {
         this.userId = userId;
     }
 
-    public Long getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(Long username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 }
