@@ -1,6 +1,6 @@
 CREATE TABLE public.user
 (
-    user_id PRIMARY KEY,
+    user_id character varying(100) PRIMARY KEY,
     username character varying(25)
 );
 
