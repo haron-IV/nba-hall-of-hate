@@ -19,6 +19,9 @@ public class PlayerCommentsRespectEntity {
     @Column(name = "author")
     private String author;
 
+    @Column(name = "author_id")
+    private Long authorId;
+
     @Column(name = "created_date")
     private Date createdDate;
 
@@ -51,6 +54,13 @@ public class PlayerCommentsRespectEntity {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public void setCommentId(Long commentId) { this.commentId = commentId; }
+
+    public Long getAuthorId() { return authorId; }
+
+    public void setAuthorId(Long authorId) { this.authorId = authorId;
     }
 
     public Date getCreatedDate() {
