@@ -27,7 +27,7 @@ public class UserController {
     }
 
     @PutMapping("/update/{id}/{nickname}")
-    public UserEntity updateUsername(@PathVariable Long id, @PathVariable String nickname) throws Exception {
+    public UserEntity updateUsername(@PathVariable String id, @PathVariable String nickname) throws Exception {
         return userService.updateUsername(id, nickname);
     }
 

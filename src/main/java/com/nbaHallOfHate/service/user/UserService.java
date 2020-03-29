@@ -20,8 +20,8 @@ public class UserService {
         return userRepository.save(userEntity);
     }
 
-    public UserEntity updateUsername(Long id, String username) throws Exception {
-        Optional<UserEntity> user = userRepository.findById(id);
+    public UserEntity updateUsername(String id, String username) throws Exception {
+        Optional<UserEntity> user = userRepository.findById(Long.parseLong(id));
         user.get().setUsername(username);
 
         return userRepository.save(user.get());
